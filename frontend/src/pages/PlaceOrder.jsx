@@ -152,7 +152,7 @@ const PlaceOrder = () => {
       {/* ------------- Left Side ---------------- */}
       <div className="flex flex-col gap-4 w-full sm:max-w-[480px]">
         <div className="text-xl sm:text-2xl my-3">
-          <Title text1={"DELIVERY"} text2={"INFORMATION"} />
+          <Title text1={"INFORMACION"} text2={"DELIVERY"} />
         </div>
         <div className="flex gap-3">
           <input
@@ -162,7 +162,7 @@ const PlaceOrder = () => {
             value={formData.firstName}
             className="border border-gray-300 rounded py-1.5 px-3.5 w-full"
             type="text"
-            placeholder="First name"
+            placeholder="Nombre"
           />
           <input
             required
@@ -171,7 +171,7 @@ const PlaceOrder = () => {
             value={formData.lastName}
             className="border border-gray-300 rounded py-1.5 px-3.5 w-full"
             type="text"
-            placeholder="Last name"
+            placeholder="Apellido"
           />
         </div>
         <input
@@ -181,7 +181,7 @@ const PlaceOrder = () => {
           value={formData.email}
           className="border border-gray-300 rounded py-1.5 px-3.5 w-full"
           type="email"
-          placeholder="Email address"
+          placeholder="Email"
         />
         <input
           required
@@ -190,7 +190,7 @@ const PlaceOrder = () => {
           value={formData.street}
           className="border border-gray-300 rounded py-1.5 px-3.5 w-full"
           type="text"
-          placeholder="Street"
+          placeholder="Calle"
         />
         <div className="flex gap-3">
           <input
@@ -200,7 +200,7 @@ const PlaceOrder = () => {
             value={formData.city}
             className="border border-gray-300 rounded py-1.5 px-3.5 w-full"
             type="text"
-            placeholder="City"
+            placeholder="Ciudad"
           />
           <input
             onChange={onChangeHandler}
@@ -208,7 +208,7 @@ const PlaceOrder = () => {
             value={formData.state}
             className="border border-gray-300 rounded py-1.5 px-3.5 w-full"
             type="text"
-            placeholder="State"
+            placeholder="Estado"
           />
         </div>
         <div className="flex gap-3">
@@ -219,7 +219,7 @@ const PlaceOrder = () => {
             value={formData.zipcode}
             className="border border-gray-300 rounded py-1.5 px-3.5 w-full"
             type="number"
-            placeholder="Zipcode"
+            placeholder="Codigo-Postal"
           />
           <input
             required
@@ -228,7 +228,7 @@ const PlaceOrder = () => {
             value={formData.country}
             className="border border-gray-300 rounded py-1.5 px-3.5 w-full"
             type="text"
-            placeholder="Country"
+            placeholder="Pais"
           />
         </div>
         <input
@@ -261,9 +261,7 @@ const PlaceOrder = () => {
                   method === "cod" ? "bg-green-400" : ""
                 }`}
               ></p>
-              <p className="text-gray-500 text-sm font-medium mx-4">
-                CASH ON DELIVERY
-              </p>
+              <p className="text-gray-500 text-sm font-medium mx-4">EFECTIVO</p>
             </div>
           </div>
 
@@ -272,7 +270,7 @@ const PlaceOrder = () => {
               type="submit"
               className="bg-black text-white px-16 py-3 text-sm"
             >
-              PLACE ORDER
+              ORDENAR COMPRA
             </button>
           </div>
         </div>
