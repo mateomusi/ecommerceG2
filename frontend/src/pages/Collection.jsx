@@ -84,7 +84,7 @@ const Collection = () => {
       <div className="min-w-60">
         <p
           onClick={() => setShowFilter(!showFilter)}
-          className="my-2 text-xl flex items-center cursor-pointer gap-2"
+          className="my-2 text-xl flex items-center cursor-pointer gap-2 text-[#0085ff]"
         >
           FILTROS
           <img
@@ -95,75 +95,58 @@ const Collection = () => {
         </p>
         {/* Category Filter */}
         <div
-          className={`border border-gray-300 pl-5 py-3 mt-6 ${
+          className={`border border-[#0085ff] pl-5 py-3 mt-6 ${
             showFilter ? "" : "hidden"
           } sm:block`}
         >
-          <p className="mb-3 text-sm font-medium">CATEGORIAS</p>
-          <div className="flex flex-col gap-2 text-sm font-light text-gray-700">
+          <p className="mb-3 text-sm font-medium text-[#006fff]">
+            Product category (Puffs)
+          </p>
+          <div className="flex flex-col gap-2 text-sm font-light text-[#69b4ff]">
             <p className="flex gap-2">
               <input
                 className="w-3"
                 type="checkbox"
-                value={"Men"}
+                value={"6000 puffs"}
                 onChange={toggleCategory}
               />{" "}
-              Hombres
+              6000 puffs
             </p>
             <p className="flex gap-2">
               <input
                 className="w-3"
                 type="checkbox"
-                value={"Women"}
+                value={"8000 puffs"}
                 onChange={toggleCategory}
               />{" "}
-              Mujeres
+              8000 puffs
             </p>
             <p className="flex gap-2">
               <input
                 className="w-3"
                 type="checkbox"
-                value={"Kids"}
+                value={"10000 puffs"}
                 onChange={toggleCategory}
               />{" "}
-              Niños
-            </p>
-          </div>
-        </div>
-        {/* SubCategory Filter */}
-        <div
-          className={`border border-gray-300 pl-5 py-3 my-5 ${
-            showFilter ? "" : "hidden"
-          } sm:block`}
-        >
-          <p className="mb-3 text-sm font-medium">TIPO</p>
-          <div className="flex flex-col gap-2 text-sm font-light text-gray-700">
-            <p className="flex gap-2">
-              <input
-                className="w-3"
-                type="checkbox"
-                value={"Topwear"}
-                onChange={toggleSubCategory}
-              />{" "}
-              Parte Superior
+              10000 puffs
             </p>
             <p className="flex gap-2">
               <input
                 className="w-3"
                 type="checkbox"
-                value={"Bottomwear"}
-                onChange={toggleSubCategory}
+                value={"15000 puffs"}
+                onChange={toggleCategory}
               />{" "}
-              Parte Inferior
+              15000 puffs
             </p>
             <p className="flex gap-2">
               <input
                 className="w-3"
                 type="checkbox"
-                value={"Winterwear"}
-                onChange={toggleSubCategory}
+                value={"20000 puffs"}
+                onChange={toggleCategory}
               />{" "}
-              Winterwear
+              20000 puffs
             </p>
           </div>
         </div>
